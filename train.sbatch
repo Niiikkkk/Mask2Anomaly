@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --time=04:00:00
+#SBATCH --time=01:00:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=5
 #SBATCH --gres=gpu:1
@@ -7,8 +7,8 @@
 #SBATCH --mail-type=ALL
 #SBATCH --partition=cuda
 ###### 1 Load the module
-module load nvidia/cudasdk/11.8_test
-module load intel/python/3/2019.4.088
+module load nvidia/cudasdk
+module load intel/python/3
 # 2 Activate the virtual environment
 source /home/nberardo/myenv/bin/activate
 # 3 Run the python script
