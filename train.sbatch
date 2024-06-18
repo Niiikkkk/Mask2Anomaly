@@ -7,7 +7,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --partition=cuda
 ###### 1 Load the module
-module load nvidia/cudasdk/10.1
+module load nvidia/cudasdk
 module load intel/python/3/2019.4.088
 # 2 Activate the virtual environment
 source /home/nberardo/myenv/bin/activate
