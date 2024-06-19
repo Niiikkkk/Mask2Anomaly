@@ -9,6 +9,9 @@
 
 # Copyright (c) Facebook, Inc. and its affiliates.
 # Modified by Bowen Cheng from https://github.com/fundamentalvision/Deformable-DETR
+
+#SBATCH --partition=cuda
+#SBATCH --gres=gpu:1
 module load nvidia/cudasdk/11.8_test
 module load intel/python/3/
 
