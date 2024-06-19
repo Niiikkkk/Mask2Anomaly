@@ -1,5 +1,5 @@
 _BASE_: Base-Cityscapes-SemanticSegmentation.yaml
-OUTPUT_DIR: "/home/nberardo/Mask2Former/output/base-exp/" #Change Path
+OUTPUT_DIR: "/home/nberardo/Mask2Anomaly/output/base-exp/" #Change Path
 SOLVER:
   MAX_ITER: 90000
   CHECKPOINT_PERIOD: 45000 ## Added Here
