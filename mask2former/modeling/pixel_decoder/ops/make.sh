@@ -10,5 +10,7 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
 # Modified by Bowen Cheng from https://github.com/fundamentalvision/Deformable-DETR
 module load nvidia/cudasdk/11.8_test
+module load intel/python/3/
+
 source /home/nberardo/myenv/bin/activate
 python setup.py build install
