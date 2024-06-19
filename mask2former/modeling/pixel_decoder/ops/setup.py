@@ -23,7 +23,7 @@ from setuptools import setup
 
 requirements = ["torch", "torchvision"]
 
-print("è available: " + torch.cuda.is_available())
+print(torch.cuda.is_available())
 
 def get_extensions():
     this_dir = os.path.dirname(os.path.abspath(__file__))
