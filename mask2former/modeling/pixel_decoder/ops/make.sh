@@ -11,4 +11,4 @@
 # Modified by Bowen Cheng from https://github.com/fundamentalvision/Deformable-DETR
 module load nvidia/cudasdk/
 source /home/nberardo/myenv/bin/activate
-python setup.py build install
+CUDA_HOME="/share/apps/legion-modulefiles/nvidia/cudasdk/" python setup.py build install
