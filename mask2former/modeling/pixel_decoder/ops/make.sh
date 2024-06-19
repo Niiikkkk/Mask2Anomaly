@@ -9,5 +9,5 @@
 
 # Copyright (c) Facebook, Inc. and its affiliates.
 # Modified by Bowen Cheng from https://github.com/fundamentalvision/Deformable-DETR
-
+source /home/nberardo/myenv/bin/activate
 python setup.py build install
