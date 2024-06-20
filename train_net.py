@@ -150,7 +150,7 @@ class Trainer(DefaultTrainer):
     def build_train_loader(cls, cfg):
         # Semantic segmentation dataset mapper
         if cfg.INPUT.DATASET_MAPPER_NAME == "mask_former_semantic":
-            print("\n\n\n\n")
+            print("\n\n\n\nConfig:")
             print(cfg)
             print("\n\n\n\n")
             mapper = MaskFormerSemanticDatasetMapper(cfg, True)
