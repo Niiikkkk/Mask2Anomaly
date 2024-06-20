@@ -150,6 +150,9 @@ class Trainer(DefaultTrainer):
     def build_train_loader(cls, cfg):
         # Semantic segmentation dataset mapper
         if cfg.INPUT.DATASET_MAPPER_NAME == "mask_former_semantic":
+            print("\n\n\n\n")
+            print(cfg)
+            print("\n\n\n\n")
             mapper = MaskFormerSemanticDatasetMapper(cfg, True)
             return build_detection_train_loader(cfg, mapper=mapper)
         # Panoptic segmentation dataset mapper
