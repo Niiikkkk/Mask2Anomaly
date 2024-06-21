@@ -116,11 +116,9 @@ if __name__ == "__main__":
 
 
     input_file = args.input[0].split('/')[-3]
-    print(input_file)
-    exit()
-    if not os.path.exists(os.path.join(args.output,'results.txt')):
-        open(os.path.join(args.output,'results.txt'), 'w').close()
-    file = open(os.path.join(args.output,'results.txt'), 'a')
+    if not os.path.exists(os.path.join(args.output,'results_' + input_file + '.txt')):
+        open(os.path.join(args.output,'results_' + input_file + '.txt'), 'w').close()
+    file = open(os.path.join(args.output,'results_' + input_file + '.txt'), 'a')
     
     cfg = setup_cfg(args)
     demo = VisualizationDemo(cfg)
