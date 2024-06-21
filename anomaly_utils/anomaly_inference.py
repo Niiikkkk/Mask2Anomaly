@@ -115,7 +115,7 @@ if __name__ == "__main__":
     logger.info("Arguments: " + str(args))
 
 
-    input_file = args.input.split('/')[-3]
+    input_file = args.input[0].split('/')[-3]
     print(input_file)
     exit()
     if not os.path.exists(os.path.join(args.output,'results.txt')):
