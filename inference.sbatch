@@ -6,8 +6,8 @@
 #SBATCH --job-name=python-ex
 #SBATCH --mail-type=ALL
 #SBATCH --partition=cuda
-#SBATCH --output=stdout.txt
-#SBATCH --error=stderr.txt
+#SBATCH --output=stdout_inference.txt
+#SBATCH --error=stderr_inference.txt
 ###### 1 Load the module
 module load nvidia/cudasdk/
 module load intel/python/3/
