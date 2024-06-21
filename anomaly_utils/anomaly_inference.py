@@ -85,7 +85,7 @@ def get_parser():
     )
     parser.add_argument(
         "--output",
-        default="/home/shyam/Mask2Former/unk-eval/results/",
+        default="/home/nberardo/Mask2Anomaly/unk-eval/results/",
         help="A file or directory to save output visualizations. "
         "If not given, will show output in an OpenCV window.",
     )
