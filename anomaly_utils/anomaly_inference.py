@@ -113,10 +113,14 @@ if __name__ == "__main__":
     setup_logger(name="fvcore")
     logger = setup_logger()
     logger.info("Arguments: " + str(args))
-    
-    if not os.path.exists('results.txt'):
-        open('results.txt', 'w').close()
-    file = open('results.txt', 'a')
+
+
+    input_file = args.input.split('/')[-3]
+    print(input_file)
+    exit()
+    if not os.path.exists(os.path.join(args.output,'results.txt')):
+        open(os.path.join(args.output,'results.txt'), 'w').close()
+    file = open(os.path.join(args.output,'results.txt'), 'a')
     
     cfg = setup_cfg(args)
     demo = VisualizationDemo(cfg)
