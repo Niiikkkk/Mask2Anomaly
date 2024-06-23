@@ -1,0 +1,126 @@
+INFO: localdir at /scratch/970953.nberardo
+INFO: your job will run on local system.
+[06/21 12:12:10 d2.checkpoint.detection_checkpoint]: [DetectionCheckpointer] Loading from /home/nberardo/Mask2Anomaly/weight/best_contrastive.pth ...
+[06/21 12:12:10 fvcore.common.checkpoint]: [Checkpointer] Loading from /home/nberardo/Mask2Anomaly/weight/best_contrastive.pth ...
+WARNING [06/21 12:12:10 fvcore.common.checkpoint]: Some model parameters or buffers are not found in the checkpoint:
+backbone.res2.0.conv1.norm.num_batches_tracked
+backbone.res2.0.conv2.norm.num_batches_tracked
+backbone.res2.0.conv3.norm.num_batches_tracked
+backbone.res2.0.shortcut.norm.num_batches_tracked
+backbone.res2.1.conv1.norm.num_batches_tracked
+backbone.res2.1.conv2.norm.num_batches_tracked
+backbone.res2.1.conv3.norm.num_batches_tracked
+backbone.res2.2.conv1.norm.num_batches_tracked
+backbone.res2.2.conv2.norm.num_batches_tracked
+backbone.res2.2.conv3.norm.num_batches_tracked
+backbone.res3.0.conv1.norm.num_batches_tracked
+backbone.res3.0.conv2.norm.num_batches_tracked
+backbone.res3.0.conv3.norm.num_batches_tracked
+backbone.res3.0.shortcut.norm.num_batches_tracked
+backbone.res3.1.conv1.norm.num_batches_tracked
+backbone.res3.1.conv2.norm.num_batches_tracked
+backbone.res3.1.conv3.norm.num_batches_tracked
+backbone.res3.2.conv1.norm.num_batches_tracked
+backbone.res3.2.conv2.norm.num_batches_tracked
+backbone.res3.2.conv3.norm.num_batches_tracked
+backbone.res3.3.conv1.norm.num_batches_tracked
+backbone.res3.3.conv2.norm.num_batches_tracked
+backbone.res3.3.conv3.norm.num_batches_tracked
+backbone.res4.0.conv1.norm.num_batches_tracked
+backbone.res4.0.conv2.norm.num_batches_tracked
+backbone.res4.0.conv3.norm.num_batches_tracked
+backbone.res4.0.shortcut.norm.num_batches_tracked
+backbone.res4.1.conv1.norm.num_batches_tracked
+backbone.res4.1.conv2.norm.num_batches_tracked
+backbone.res4.1.conv3.norm.num_batches_tracked
+backbone.res4.2.conv1.norm.num_batches_tracked
+backbone.res4.2.conv2.norm.num_batches_tracked
+backbone.res4.2.conv3.norm.num_batches_tracked
+backbone.res4.3.conv1.norm.num_batches_tracked
+backbone.res4.3.conv2.norm.num_batches_tracked
+backbone.res4.3.conv3.norm.num_batches_tracked
+backbone.res4.4.conv1.norm.num_batches_tracked
+backbone.res4.4.conv2.norm.num_batches_tracked
+backbone.res4.4.conv3.norm.num_batches_tracked
+backbone.res4.5.conv1.norm.num_batches_tracked
+backbone.res4.5.conv2.norm.num_batches_tracked
+backbone.res4.5.conv3.norm.num_batches_tracked
+backbone.res5.0.conv1.norm.num_batches_tracked
+backbone.res5.0.conv2.norm.num_batches_tracked
+backbone.res5.0.conv3.norm.num_batches_tracked
+backbone.res5.0.shortcut.norm.num_batches_tracked
+backbone.res5.1.conv1.norm.num_batches_tracked
+backbone.res5.1.conv2.norm.num_batches_tracked
+backbone.res5.1.conv3.norm.num_batches_tracked
+backbone.res5.2.conv1.norm.num_batches_tracked
+backbone.res5.2.conv2.norm.num_batches_tracked
+backbone.res5.2.conv3.norm.num_batches_tracked
+backbone.stem.conv1.norm.num_batches_tracked
+[06/21 12:12:16 detectron2]: /home/nberardo/Datasets/FS_LostFound_full/images/0.png: finished in 5.24s
+Namespace(aug=True, confidence_threshold=0.5, config_file='configs/cityscapes/semantic-segmentation/anomaly_inference.yaml', input=['/home/nberardo/Datasets/FS_LostFound_full/images/0.png', '/home/nberardo/Datasets/FS_LostFound_full/images/10.png', '/home/nberardo/Datasets/FS_LostFound_full/images/11.png', '/home/nberardo/Datasets/FS_LostFound_full/images/12.png', '/home/nberardo/Datasets/FS_LostFound_full/images/13.png', '/home/nberardo/Datasets/FS_LostFound_full/images/14.png', '/home/nberardo/Datasets/FS_LostFound_full/images/15.png', '/home/nberardo/Datasets/FS_LostFound_full/images/16.png', '/home/nberardo/Datasets/FS_LostFound_full/images/17.png', '/home/nberardo/Datasets/FS_LostFound_full/images/18.png', '/home/nberardo/Datasets/FS_LostFound_full/images/19.png', '/home/nberardo/Datasets/FS_LostFound_full/images/1.png', '/home/nberardo/Datasets/FS_LostFound_full/images/20.png', '/home/nberardo/Datasets/FS_LostFound_full/images/21.png', '/home/nberardo/Datasets/FS_LostFound_full/images/22.png', '/home/nberardo/Datasets/FS_LostFound_full/images/23.png', '/home/nberardo/Datasets/FS_LostFound_full/images/24.png', '/home/nberardo/Datasets/FS_LostFound_full/images/25.png', '/home/nberardo/Datasets/FS_LostFound_full/images/26.png', '/home/nberardo/Datasets/FS_LostFound_full/images/27.png', '/home/nberardo/Datasets/FS_LostFound_full/images/28.png', '/home/nberardo/Datasets/FS_LostFound_full/images/29.png', '/home/nberardo/Datasets/FS_LostFound_full/images/2.png', '/home/nberardo/Datasets/FS_LostFound_full/images/30.png', '/home/nberardo/Datasets/FS_LostFound_full/images/31.png', '/home/nberardo/Datasets/FS_LostFound_full/images/32.png', '/home/nberardo/Datasets/FS_LostFound_full/images/33.png', '/home/nberardo/Datasets/FS_LostFound_full/images/34.png', '/home/nberardo/Datasets/FS_LostFound_full/images/35.png', '/home/nberardo/Datasets/FS_LostFound_full/images/36.png', '/home/nberardo/Datasets/FS_LostFound_full/images/37.png', '/home/nberardo/Datasets/FS_LostFound_full/images/38.png', '/home/nberardo/Datasets/FS_LostFound_full/images/39.png', '/home/nberardo/Datasets/FS_LostFound_full/images/3.png', '/home/nberardo/Datasets/FS_LostFound_full/images/40.png', '/home/nberardo/Datasets/FS_LostFound_full/images/41.png', '/home/nberardo/Datasets/FS_LostFound_full/images/42.png', '/home/nberardo/Datasets/FS_LostFound_full/images/43.png', '/home/nberardo/Datasets/FS_LostFound_full/images/44.png', '/home/nberardo/Datasets/FS_LostFound_full/images/45.png', '/home/nberardo/Datasets/FS_LostFound_full/images/46.png', '/home/nberardo/Datasets/FS_LostFound_full/images/47.png', '/home/nberardo/Datasets/FS_LostFound_full/images/48.png', '/home/nberardo/Datasets/FS_LostFound_full/images/49.png', '/home/nberardo/Datasets/FS_LostFound_full/images/4.png', '/home/nberardo/Datasets/FS_LostFound_full/images/50.png', '/home/nberardo/Datasets/FS_LostFound_full/images/51.png', '/home/nberardo/Datasets/FS_LostFound_full/images/52.png', '/home/nberardo/Datasets/FS_LostFound_full/images/53.png', '/home/nberardo/Datasets/FS_LostFound_full/images/54.png', '/home/nberardo/Datasets/FS_LostFound_full/images/55.png', '/home/nberardo/Datasets/FS_LostFound_full/images/56.png', '/home/nberardo/Datasets/FS_LostFound_full/images/57.png', '/home/nberardo/Datasets/FS_LostFound_full/images/58.png', '/home/nberardo/Datasets/FS_LostFound_full/images/59.png', '/home/nberardo/Datasets/FS_LostFound_full/images/5.png', '/home/nberardo/Datasets/FS_LostFound_full/images/60.png', '/home/nberardo/Datasets/FS_LostFound_full/images/61.png', '/home/nberardo/Datasets/FS_LostFound_full/images/62.png', '/home/nberardo/Datasets/FS_LostFound_full/images/63.png', '/home/nberardo/Datasets/FS_LostFound_full/images/64.png', '/home/nberardo/Datasets/FS_LostFound_full/images/65.png', '/home/nberardo/Datasets/FS_LostFound_full/images/66.png', '/home/nberardo/Datasets/FS_LostFound_full/images/67.png', '/home/nberardo/Datasets/FS_LostFound_full/images/68.png', '/home/nberardo/Datasets/FS_LostFound_full/images/69.png', '/home/nberardo/Datasets/FS_LostFound_full/images/6.png', '/home/nberardo/Datasets/FS_LostFound_full/images/70.png', '/home/nberardo/Datasets/FS_LostFound_full/images/71.png', '/home/nberardo/Datasets/FS_LostFound_full/images/72.png', '/home/nberardo/Datasets/FS_LostFound_full/images/73.png', '/home/nberardo/Datasets/FS_LostFound_full/images/74.png', '/home/nberardo/Datasets/FS_LostFound_full/images/75.png', '/home/nberardo/Datasets/FS_LostFound_full/images/76.png', '/home/nberardo/Datasets/FS_LostFound_full/images/77.png', '/home/nberardo/Datasets/FS_LostFound_full/images/78.png', '/home/nberardo/Datasets/FS_LostFound_full/images/79.png', '/home/nberardo/Datasets/FS_LostFound_full/images/7.png', '/home/nberardo/Datasets/FS_LostFound_full/images/80.png', '/home/nberardo/Datasets/FS_LostFound_full/images/81.png', '/home/nberardo/Datasets/FS_LostFound_full/images/82.png', '/home/nberardo/Datasets/FS_LostFound_full/images/83.png', '/home/nberardo/Datasets/FS_LostFound_full/images/84.png', '/home/nberardo/Datasets/FS_LostFound_full/images/85.png', '/home/nberardo/Datasets/FS_LostFound_full/images/86.png', '/home/nberardo/Datasets/FS_LostFound_full/images/87.png', '/home/nberardo/Datasets/FS_LostFound_full/images/88.png', '/home/nberardo/Datasets/FS_LostFound_full/images/89.png', '/home/nberardo/Datasets/FS_LostFound_full/images/8.png', '/home/nberardo/Datasets/FS_LostFound_full/images/90.png', '/home/nberardo/Datasets/FS_LostFound_full/images/91.png', '/home/nberardo/Datasets/FS_LostFound_full/images/92.png', '/home/nberardo/Datasets/FS_LostFound_full/images/93.png', '/home/nberardo/Datasets/FS_LostFound_full/images/94.png', '/home/nberardo/Datasets/FS_LostFound_full/images/95.png', '/home/nberardo/Datasets/FS_LostFound_full/images/96.png', '/home/nberardo/Datasets/FS_LostFound_full/images/97.png', '/home/nberardo/Datasets/FS_LostFound_full/images/98.png', '/home/nberardo/Datasets/FS_LostFound_full/images/99.png', '/home/nberardo/Datasets/FS_LostFound_full/images/9.png'], opts=[], output='/home/nberardo/Mask2Anomaly/unk-eval/results/')
+AUROC score: 0.9993210626974854
+AUPRC score: 0.6697874928210708
+FPR@TPR95: 0.0029167259996169957
+[06/21 12:12:18 detectron2]: Arguments: Namespace(aug=True, confidence_threshold=0.5, config_file='configs/cityscapes/semantic-segmentation/anomaly_inference.yaml', input=['/home/nberardo/Datasets/RoadObsticle21/images/0.webp', '/home/nberardo/Datasets/RoadObsticle21/images/10.webp', '/home/nberardo/Datasets/RoadObsticle21/images/11.webp', '/home/nberardo/Datasets/RoadObsticle21/images/12.webp', '/home/nberardo/Datasets/RoadObsticle21/images/13.webp', '/home/nberardo/Datasets/RoadObsticle21/images/14.webp', '/home/nberardo/Datasets/RoadObsticle21/images/15.webp', '/home/nberardo/Datasets/RoadObsticle21/images/16.webp', '/home/nberardo/Datasets/RoadObsticle21/images/17.webp', '/home/nberardo/Datasets/RoadObsticle21/images/18.webp', '/home/nberardo/Datasets/RoadObsticle21/images/19.webp', '/home/nberardo/Datasets/RoadObsticle21/images/1.webp', '/home/nberardo/Datasets/RoadObsticle21/images/20.webp', '/home/nberardo/Datasets/RoadObsticle21/images/21.webp', '/home/nberardo/Datasets/RoadObsticle21/images/22.webp', '/home/nberardo/Datasets/RoadObsticle21/images/23.webp', '/home/nberardo/Datasets/RoadObsticle21/images/24.webp', '/home/nberardo/Datasets/RoadObsticle21/images/25.webp', '/home/nberardo/Datasets/RoadObsticle21/images/26.webp', '/home/nberardo/Datasets/RoadObsticle21/images/27.webp', '/home/nberardo/Datasets/RoadObsticle21/images/28.webp', '/home/nberardo/Datasets/RoadObsticle21/images/29.webp', '/home/nberardo/Datasets/RoadObsticle21/images/2.webp', '/home/nberardo/Datasets/RoadObsticle21/images/3.webp', '/home/nberardo/Datasets/RoadObsticle21/images/4.webp', '/home/nberardo/Datasets/RoadObsticle21/images/5.webp', '/home/nberardo/Datasets/RoadObsticle21/images/6.webp', '/home/nberardo/Datasets/RoadObsticle21/images/7.webp', '/home/nberardo/Datasets/RoadObsticle21/images/8.webp', '/home/nberardo/Datasets/RoadObsticle21/images/9.webp'], opts=[], output='/home/nberardo/Mask2Anomaly/unk-eval/results/')
+WARNING [06/21 12:12:18 fvcore.common.config]: Loading config configs/cityscapes/semantic-segmentation/Base-Cityscapes-SemanticSegmentation.yaml with yaml.unsafe_load. Your machine may be at risk if the file contains malicious content.
+[06/21 12:12:23 d2.checkpoint.detection_checkpoint]: [DetectionCheckpointer] Loading from /home/nberardo/Mask2Anomaly/weight/best_contrastive.pth ...
+[06/21 12:12:23 fvcore.common.checkpoint]: [Checkpointer] Loading from /home/nberardo/Mask2Anomaly/weight/best_contrastive.pth ...
+WARNING [06/21 12:12:23 fvcore.common.checkpoint]: Some model parameters or buffers are not found in the checkpoint:
+backbone.res2.0.conv1.norm.num_batches_tracked
+backbone.res2.0.conv2.norm.num_batches_tracked
+backbone.res2.0.conv3.norm.num_batches_tracked
+backbone.res2.0.shortcut.norm.num_batches_tracked
+backbone.res2.1.conv1.norm.num_batches_tracked
+backbone.res2.1.conv2.norm.num_batches_tracked
+backbone.res2.1.conv3.norm.num_batches_tracked
+backbone.res2.2.conv1.norm.num_batches_tracked
+backbone.res2.2.conv2.norm.num_batches_tracked
+backbone.res2.2.conv3.norm.num_batches_tracked
+backbone.res3.0.conv1.norm.num_batches_tracked
+backbone.res3.0.conv2.norm.num_batches_tracked
+backbone.res3.0.conv3.norm.num_batches_tracked
+backbone.res3.0.shortcut.norm.num_batches_tracked
+backbone.res3.1.conv1.norm.num_batches_tracked
+backbone.res3.1.conv2.norm.num_batches_tracked
+backbone.res3.1.conv3.norm.num_batches_tracked
+backbone.res3.2.conv1.norm.num_batches_tracked
+backbone.res3.2.conv2.norm.num_batches_tracked
+backbone.res3.2.conv3.norm.num_batches_tracked
+backbone.res3.3.conv1.norm.num_batches_tracked
+backbone.res3.3.conv2.norm.num_batches_tracked
+backbone.res3.3.conv3.norm.num_batches_tracked
+backbone.res4.0.conv1.norm.num_batches_tracked
+backbone.res4.0.conv2.norm.num_batches_tracked
+backbone.res4.0.conv3.norm.num_batches_tracked
+backbone.res4.0.shortcut.norm.num_batches_tracked
+backbone.res4.1.conv1.norm.num_batches_tracked
+backbone.res4.1.conv2.norm.num_batches_tracked
+backbone.res4.1.conv3.norm.num_batches_tracked
+backbone.res4.2.conv1.norm.num_batches_tracked
+backbone.res4.2.conv2.norm.num_batches_tracked
+backbone.res4.2.conv3.norm.num_batches_tracked
+backbone.res4.3.conv1.norm.num_batches_tracked
+backbone.res4.3.conv2.norm.num_batches_tracked
+backbone.res4.3.conv3.norm.num_batches_tracked
+backbone.res4.4.conv1.norm.num_batches_tracked
+backbone.res4.4.conv2.norm.num_batches_tracked
+backbone.res4.4.conv3.norm.num_batches_tracked
+backbone.res4.5.conv1.norm.num_batches_tracked
+backbone.res4.5.conv2.norm.num_batches_tracked
+backbone.res4.5.conv3.norm.num_batches_tracked
+backbone.res5.0.conv1.norm.num_batches_tracked
+backbone.res5.0.conv2.norm.num_batches_tracked
+backbone.res5.0.conv3.norm.num_batches_tracked
+backbone.res5.0.shortcut.norm.num_batches_tracked
+backbone.res5.1.conv1.norm.num_batches_tracked
+backbone.res5.1.conv2.norm.num_batches_tracked
+backbone.res5.1.conv3.norm.num_batches_tracked
+backbone.res5.2.conv1.norm.num_batches_tracked
+backbone.res5.2.conv2.norm.num_batches_tracked
+backbone.res5.2.conv3.norm.num_batches_tracked
+backbone.stem.conv1.norm.num_batches_tracked
+[06/21 12:12:29 detectron2]: /home/nberardo/Datasets/RoadObsticle21/images/0.webp: finished in 4.28s
+Namespace(aug=True, confidence_threshold=0.5, config_file='configs/cityscapes/semantic-segmentation/anomaly_inference.yaml', input=['/home/nberardo/Datasets/RoadObsticle21/images/0.webp', '/home/nberardo/Datasets/RoadObsticle21/images/10.webp', '/home/nberardo/Datasets/RoadObsticle21/images/11.webp', '/home/nberardo/Datasets/RoadObsticle21/images/12.webp', '/home/nberardo/Datasets/RoadObsticle21/images/13.webp', '/home/nberardo/Datasets/RoadObsticle21/images/14.webp', '/home/nberardo/Datasets/RoadObsticle21/images/15.webp', '/home/nberardo/Datasets/RoadObsticle21/images/16.webp', '/home/nberardo/Datasets/RoadObsticle21/images/17.webp', '/home/nberardo/Datasets/RoadObsticle21/images/18.webp', '/home/nberardo/Datasets/RoadObsticle21/images/19.webp', '/home/nberardo/Datasets/RoadObsticle21/images/1.webp', '/home/nberardo/Datasets/RoadObsticle21/images/20.webp', '/home/nberardo/Datasets/RoadObsticle21/images/21.webp', '/home/nberardo/Datasets/RoadObsticle21/images/22.webp', '/home/nberardo/Datasets/RoadObsticle21/images/23.webp', '/home/nberardo/Datasets/RoadObsticle21/images/24.webp', '/home/nberardo/Datasets/RoadObsticle21/images/25.webp', '/home/nberardo/Datasets/RoadObsticle21/images/26.webp', '/home/nberardo/Datasets/RoadObsticle21/images/27.webp', '/home/nberardo/Datasets/RoadObsticle21/images/28.webp', '/home/nberardo/Datasets/RoadObsticle21/images/29.webp', '/home/nberardo/Datasets/RoadObsticle21/images/2.webp', '/home/nberardo/Datasets/RoadObsticle21/images/3.webp', '/home/nberardo/Datasets/RoadObsticle21/images/4.webp', '/home/nberardo/Datasets/RoadObsticle21/images/5.webp', '/home/nberardo/Datasets/RoadObsticle21/images/6.webp', '/home/nberardo/Datasets/RoadObsticle21/images/7.webp', '/home/nberardo/Datasets/RoadObsticle21/images/8.webp', '/home/nberardo/Datasets/RoadObsticle21/images/9.webp'], opts=[], output='/home/nberardo/Mask2Anomaly/unk-eval/results/')
+AUROC score: 0.9748194969255942
+AUPRC score: 0.3006502594239137
+FPR@TPR95: 0.09584469935417687
