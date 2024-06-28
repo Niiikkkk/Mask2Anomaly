@@ -1,6 +1,7 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
 import copy
 import logging
+import sys
 
 import numpy as np
 import torch
@@ -197,6 +198,7 @@ class MaskFormerSemanticDatasetMapper:
         assert self.is_train, "MaskFormerSemanticDatasetMapper should only be used for training!"
 
         dataset_dict = copy.deepcopy(dataset_dict)  # it will be modified by code below
+        print("Dict:",dataset_dict,file=sys.stderr)
         image = utils.read_image(dataset_dict["file_name"], format=self.img_format)
         utils.check_image_size(dataset_dict, image)
 
@@ -214,8 +216,6 @@ class MaskFormerSemanticDatasetMapper:
             )
 
         #Anomaly Mix#
-        print("\n\n\n\n         ")
-        print(self.is_ood_ft)
         if self.is_ood_ft: 
             if np.random.uniform() < self.anomaly_mix_ratio:
                 coco_gt_path = random.choice(self.gt_list)
