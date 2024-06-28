@@ -217,7 +217,7 @@ class MaskFormerSemanticDatasetMapper:
         if self.is_ood_ft: 
             if np.random.uniform() < self.anomaly_mix_ratio:
                 coco_gt_path = random.choice(self.gt_list)
-                coco_img_path = self.anomaly_file_path
+                coco_img_path = coco_gt_path
                 #coco_img_path = coco_gt_path.replace('ood_annotations','images')
                 #coco_img_path = coco_img_path.replace('png','jpg')
                 coco_img = utils.read_image(coco_img_path, format=self.img_format)
