@@ -215,6 +215,7 @@ class MaskFormerSemanticDatasetMapper:
             )
 
         #Anomaly Mix#
+        print("\n\n\nCIAOOO\n\n\n",file=sys.stderr)
         print("\n",self.is_ood_ft,file=sys.stderr)
         if self.is_ood_ft: 
             if np.random.uniform() < self.anomaly_mix_ratio:
