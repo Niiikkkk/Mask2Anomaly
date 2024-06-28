@@ -214,7 +214,8 @@ class MaskFormerSemanticDatasetMapper:
             )
 
         #Anomaly Mix#
-        print("         " , self.is_ood_ft)
+        print("\n\n\n\n         ")
+        print(self.is_ood_ft)
         if self.is_ood_ft: 
             if np.random.uniform() < self.anomaly_mix_ratio:
                 coco_gt_path = random.choice(self.gt_list)
