@@ -197,13 +197,13 @@ class MaskFormerSemanticDatasetMapper:
 
         dataset_dict = copy.deepcopy(dataset_dict)  # it will be modified by code below
         image = utils.read_image(dataset_dict["file_name"], format=self.img_format)
-        print(image.flags,file=sys.stderr)
-        sys.stderr.flush()
+        image.setflags(write=1)
         utils.check_image_size(dataset_dict, image)
 
         if "sem_seg_file_name" in dataset_dict:
             # PyTorch transformation not implemented for uint16, so converting it to double first
             sem_seg_gt = utils.read_image(dataset_dict.pop("sem_seg_file_name")).astype("double")
+            sem_seg_gt.setflags(write=1)
         else:
             sem_seg_gt = None
 
