@@ -90,10 +90,8 @@ def mix_object(current_labeled_image=None, current_labeled_mask=None, cut_object
         w_start_point = 0
         w_end_point = 0
 
-    current_labeled_image[h_start_point:h_end_point, w_start_point:w_end_point, :][np.where(idx == 254)] = \
-        cut_object_image[np.where(idx == 254)]
-    current_labeled_mask[h_start_point:h_end_point, w_start_point:w_end_point][np.where(cut_object_mask == 254)] = \
-        cut_object_mask[np.where(cut_object_mask == 254)]
+    current_labeled_image[h_start_point:h_end_point, w_start_point:w_end_point, :][np.where(idx == 254)] = cut_object_image[np.where(idx == 254)]
+    current_labeled_mask[h_start_point:h_end_point, w_start_point:w_end_point][np.where(cut_object_mask == 254)] = cut_object_mask[np.where(cut_object_mask == 254)]
 
     return current_labeled_image, current_labeled_mask
 
