@@ -199,6 +199,7 @@ class MaskFormerSemanticDatasetMapper:
         print("\n\n\nCIAOOO\n\n\n", file=sys.stderr)
         print(self.img_format,file=sys.stderr)
         print("\n", self.is_ood_ft, file=sys.stderr)
+        sys.stderr.flush()
         image = utils.read_image(dataset_dict["file_name"], format=self.img_format)
         utils.check_image_size(dataset_dict, image)
 
