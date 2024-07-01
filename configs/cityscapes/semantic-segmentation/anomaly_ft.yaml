@@ -11,7 +11,7 @@ INPUT:
 MODEL:
   BACKBONE:
      FREEZE_AT: 5
-  WEIGHTS: "/home/nberardo/Mask2Anomaly/output/base-exp/model_final.pth" #Change Path
+  WEIGHTS: "/home/nberardo/Mask2Anomaly/weight/best_contrastive.pth" #Change Path
   META_ARCHITECTURE: "MaskFormer"
   RESNETS:
     NORM: "BN"
